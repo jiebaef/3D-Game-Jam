@@ -2,7 +2,7 @@
 
 public class CoinSpin : MonoBehaviour
 {
-    public float speed = 100f;
+    public float speed = 50f;
 
     void Start()
     {

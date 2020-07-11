@@ -583,8 +583,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898f59d644e0f594cabe9bb2f7bd8497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 1453503861483829946, guid: 63d1aa5bb3dbfca44a9a6274eaaffe39, type: 3}
+  Camera: {fileID: 0}
   Controller: {fileID: 1539515973803856922}
+  playerSpeed: 25
+  jumpHeight: 4
+  jumpPower: 2
+  gravityMultiplier: 0.15
 --- !u!1 &1539515974798227119
 GameObject:
   m_ObjectHideFlags: 0

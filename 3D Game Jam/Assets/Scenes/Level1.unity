@@ -22188,6 +22188,9 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 38.883003, y: -239.375, z: -96.851006}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> finn/edit-camera
 --- !u!1 &2126882590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1453503861483829951, guid: 63d1aa5bb3dbfca44a9a6274eaaffe39,
@@ -22206,8 +22209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30929f869611144faa19e395082401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 =======
 >>>>>>> origin/Tim2
+=======
+>>>>>>> finn/edit-camera
 --- !u!1001 &6552694408323028420
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
+
 
 public class FlagTrigger : MonoBehaviour
 {
@@ -15,9 +16,18 @@ public class FlagTrigger : MonoBehaviour
     }
 
     void Update() 
-    { 
-        if(triggered)
+    {
+        if (triggered)
+        {
             flag.position = Vector3.MoveTowards(flag.position, target, Time.deltaTime * speed);
+            GameObject.Find("Player").GetComponent<ThirdPersonMovement>().enabled = false;
+            Invoke("loadNextScene", 2);
+        }
+    }
+
+    void loadNextScene() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

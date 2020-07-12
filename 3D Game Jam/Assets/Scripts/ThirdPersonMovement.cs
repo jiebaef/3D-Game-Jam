@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ThirdPersonMovement : MonoBehaviour
                     jumpHeight = 4f,
                     jumpPower = 2f,
                     gravityMultiplier = 0.15f;
+
+    public float velocityMultiplier = 1f;
 
     private Vector3 playerVelocity = new Vector3(0, 0, 0);
     private bool isGrounded, canJump;
@@ -29,11 +32,14 @@ public class ThirdPersonMovement : MonoBehaviour
         ExecuteIfJumped();
 
         AddGravityToCharacter();
+
+        if(transform.position.y <-10)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void RotateCharacterTowardsCameraAim() => transform.rotation = Quaternion.Euler(0f, Camera.transform.rotation.eulerAngles.y, 0f);
 
-    private void MoveCharacterTowardsRotation() => Controller.Move(transform.forward * playerSpeed * Time.fixedDeltaTime);
+    private void MoveCharacterTowardsRotation() => Controller.Move(transform.forward * playerSpeed * velocityMultiplier * Time.fixedDeltaTime);
 
     private void ExecuteIfJumped()
     {

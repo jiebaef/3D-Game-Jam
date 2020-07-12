@@ -225,36 +225,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1453503861595559886}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1936019491
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1957004015}
-  m_Layer: 9
-  m_Name: GroundCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1957004015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957004014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.012, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1162509536}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2144075502
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,12 +418,12 @@ PrefabInstance:
     - target: {fileID: 1539515973491056764, guid: b1dece1ed49b2b44eaa634f167b3e29e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000001703458
+      value: -0.000000017034587
       objectReference: {fileID: 0}
     - target: {fileID: 1539515973491056764, guid: b1dece1ed49b2b44eaa634f167b3e29e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000024253861
+      value: 0.0000000024253872
       objectReference: {fileID: 0}
     - target: {fileID: 1539515973491056764, guid: b1dece1ed49b2b44eaa634f167b3e29e,
         type: 3}
